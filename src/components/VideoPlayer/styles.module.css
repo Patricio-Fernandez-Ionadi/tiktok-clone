@@ -30,7 +30,8 @@
 	bottom: 16px;
 	right: 16px;
 }
-.action svg {
+.actions svg {
 	font-size: 2.5rem;
 	color: #fff;
+	opacity: 0.9;
 }
