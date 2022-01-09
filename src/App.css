@@ -9,8 +9,6 @@
 main {
 	scroll-snap-type: y mandatory;
 	aspect-ratio: 9/16;
-	width: 375px;
-	max-width: 375px;
 	overflow-y: scroll;
 	border-radius: 3px;
 	height: auto;
