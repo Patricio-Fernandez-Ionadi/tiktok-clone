@@ -1,6 +1,6 @@
-import { useState } from "react"
-import "./App.css"
-import VideoPlayer from "./components/VideoPlayer"
+import { useState } from 'react'
+import './App.css'
+import FeedVideos from './components/FeedVideos'
 
 function App() {
 	const [count, setCount] = useState(0)
@@ -8,7 +8,7 @@ function App() {
 	return (
 		<div className='App'>
 			<main>
-				<VideoPlayer />
+				<FeedVideos />
 			</main>
 		</div>
 	)
