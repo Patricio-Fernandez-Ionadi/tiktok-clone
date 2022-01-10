@@ -20,10 +20,11 @@ export default function FeedVideos() {
 
 	return videos?.map((video) => {
 		const { user = {} } = video
+		const { avatar, username } = user
 
 		return (
 			<div key={video.id} className={styles.item}>
-				<VideoPlayer {...video} username={user.username} />
+				<VideoPlayer {...video} username={username} avatar={avatar} />
 			</div>
 		)
 	})

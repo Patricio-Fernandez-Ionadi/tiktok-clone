@@ -8,6 +8,8 @@ export default function VideoPlayerActions({
 	comments = 333,
 	shares = 520,
 	hearted = false,
+	avatar,
+	username,
 }) {
 	const handleLike = () => {
 		alert('like')
@@ -21,6 +23,11 @@ export default function VideoPlayerActions({
 
 	return (
 		<aside className={styles.actions}>
+			<div className={styles.user}>
+				<img src={avatar} alt={username} />
+				<img src='/assets/follow.svg' alt='follow icon' />
+			</div>
+
 			<button className={styles.action} onClick={handleLike}>
 				<FavoriteIcon />
 				<span title='like'>{likes}</span>

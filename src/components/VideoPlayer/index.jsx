@@ -12,6 +12,10 @@ export default function VideoPlayer({
 	username,
 	description,
 	songTitle,
+	avatar,
+	likes,
+	shares,
+	comments,
 }) {
 	const [playing, setPlaying] = useState(false)
 	const video = useRef(null)
@@ -39,7 +43,13 @@ export default function VideoPlayer({
 				onClick={handlePlay}
 			/>
 			<i onClick={handlePlay} className={playerClassName}></i>
-			<VideoPlayerActions />
+			<VideoPlayerActions
+				avatar={avatar}
+				username={username}
+				likes={likes}
+				comments={comments}
+				shares={shares}
+			/>
 			<VideoDescription
 				albumCover={albumCover}
 				username={username}
