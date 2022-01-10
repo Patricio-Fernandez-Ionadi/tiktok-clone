@@ -9,9 +9,8 @@ import VideoPlayerActions from './VideoPlayerActions'
 export default function VideoPlayer({
 	src,
 	albumCover,
-	author,
+	username,
 	description,
-	tags,
 	songTitle,
 }) {
 	const [playing, setPlaying] = useState(false)
@@ -43,9 +42,8 @@ export default function VideoPlayer({
 			<VideoPlayerActions />
 			<VideoDescription
 				albumCover={albumCover}
-				author={author}
+				username={username}
 				description={description}
-				tags={tags}
 				songTitle={songTitle}
 			/>
 		</div>
